@@ -142,23 +142,19 @@ npm run lint:fix
 We follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ### Format
-<type>(<scope>): <subject>
-<body>
-<footer>
-````
 Types
 
-feat: New feature
-fix: Bug fix
-docs: Documentation changes
-style: Code style changes (formatting, etc.)
-refactor: Code refactoring
-test: Adding/updating tests
-chore: Maintenance tasks
+feat: New feature<br>
+fix: Bug fix<br>
+docs: Documentation changes<br>
+style: Code style changes (formatting, etc.)<br>
+refactor: Code refactoring<br>
+test: Adding/updating tests<br>
+chore: Maintenance tasks<br>
 
 Examples
-bash# Feature
-git commit -m "feat(subscriptions): add recurring billing support"
+# Feature
+git commit -m "feat(subscriptions): add recurring billing support"<br>
 
 # Bug fix
 git commit -m "fix(auth): resolve JWT expiration issue"
@@ -171,40 +167,44 @@ git commit -m "feat(api): redesign subscription endpoints
 
 BREAKING CHANGE: /api/subscriptions now requires authentication"
 
-🔄 Pull Request Process
+---
+
+## 🔄 Pull Request Process
 Before Submitting
 
-✅ Code follows style guidelines
-✅ Tests pass (npm test)
-✅ New tests added for new features
-✅ Documentation updated
-✅ Commits follow convention
-✅ No merge conflicts
+✅ Code follows style guidelines<br>
+✅ Tests pass (npm test)<br>
+✅ New tests added for new features<br>
+✅ Documentation updated<br>
+✅ Commits follow convention<br>
+✅ No merge conflicts<br>
 
-PR Template
+PR Template-
 When creating a PR, include:
 
-Description: What does this PR do?
-Related Issues: Link related issues
-Type of Change: Feature, bugfix, docs, etc.
-Testing: How was this tested?
-Screenshots: If UI changes
+Description: What does this PR do?<br>
+Related Issues: Link related issues<br>
+Type of Change: Feature, bugfix, docs, etc.<br>
+Testing: How was this tested?<br>
+Screenshots: If UI changes<br>
 
 Review Process
 
-At least one maintainer must review
-All CI checks must pass
-No unresolved conversations
-Squash and merge preferred
+At least one maintainer must review<br>
+All CI checks must pass<br>
+No unresolved conversations<br>
+Squash and merge preferred<br>
 
+---
 
-🧪 Testing Guidelines
-Writing Tests
-javascript// Unit test example
-describe('SubscriptionController', () => {
-  test('should create a subscription', async () => {
-    const subscription = await createSubscription(mockData);
-    expect(subscription.name).toBe('Netflix');
+## 🧪 Testing Guidelines
+### Writing Tests
+```
+// Unit test example<br>
+describe('SubscriptionController', () => {<br>
+  test('should create a subscription', async () => {<br>
+    const subscription = await createSubscription(mockData);<br>
+    expect(subscription.name).toBe('Netflix');<br>
   });
 });
 
@@ -219,15 +219,16 @@ describe('POST /api/v1/subscriptions', () => {
     expect(response.status).toBe(201);
   });
 });
-Test Coverage
+```
+### Test Coverage
 
-Maintain >80% code coverage
-Test happy paths and edge cases
-Mock external dependencies
-Use descriptive test names
+Maintain >80% code coverage<br>
+Test happy paths and edge cases<br>
+Mock external dependencies<br>
+Use descriptive test names<br>
 
-Running Tests
-bash# All tests
+### Running Tests
+# All tests
 npm test
 
 # With coverage
@@ -239,9 +240,12 @@ npm run test:watch
 # Specific file
 npm test -- subscriptionController.test.js
 
-📚 Documentation
-Code Comments
-javascript/**
+---
+
+## 📚 Documentation
+### Code Comments
+```
+/**
  * Creates a new subscription for a user
  * @param {Object} subscriptionData - Subscription details
  * @param {string} userId - User ID
@@ -266,12 +270,11 @@ javascript/**
  *           schema:
  *             $ref: '#/components/schemas/Subscription'
  */
+```
+---
 
-🐛 Issue Labels
-LabelDescriptionbugSomething isn't workingenhancementNew feature requestdocumentationDocumentation improvementsgood first issueGood for newcomershelp wantedExtra attention neededquestionFurther information requestedwontfixThis will not be worked on
-
-🎯 Development Workflow
-bash# 1. Sync with upstream
+## 🎯 Development Workflow
+# 1. Sync with upstream
 git checkout main
 git pull upstream main
 
@@ -287,19 +290,15 @@ git push origin feature/my-feature
 
 # 5. Create pull request on GitHub
 
-💡 Tips
+---
 
-Small PRs: Easier to review and merge
-One feature per PR: Focus on single concern
-Update tests: Always add/update tests
-Ask questions: Use discussions for help
-Be patient: Reviews take time
+## 💡 Tips
 
-
-📞 Getting Help
-
-💬 GitHub Discussions
-🐛 GitHub Issues
+Small PRs: Easier to review and merge<br>
+One feature per PR: Focus on single concern<br>
+Update tests: Always add/update tests<br>
+Ask questions: Use discussions for help<br>
+Be patient: Reviews take time<br>
 
 
 Thank you for contributing! 🙏
