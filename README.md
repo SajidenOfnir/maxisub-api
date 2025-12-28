@@ -125,23 +125,26 @@ docker-compose up
 ### API Endpoints
 
 #### Authentication
-POST   /api/v1/auth/register      - Register new user<br>
-POST   /api/v1/auth/login         - Login user<br>
-GET    /api/v1/auth/profile       - Get user profile<br>
-PUT    /api/v1/auth/profile       - Update profile<br>
-
+```
+POST   /api/v1/auth/register      - Register new user
+POST   /api/v1/auth/login         - Login user
+GET    /api/v1/auth/profile       - Get user profile
+PUT    /api/v1/auth/profile       - Update profile
+```
 #### Subscriptions
-POST   /api/v1/subscriptions      - Create subscription<br>
-GET    /api/v1/subscriptions      - List all subscriptions<br>
-GET    /api/v1/subscriptions/:id  - Get subscription by ID<br>
-PUT    /api/v1/subscriptions/:id  - Update subscription<br>
-DELETE /api/v1/subscriptions/:id  - Delete subscription<br>
-
+```
+POST   /api/v1/subscriptions      - Create subscription
+GET    /api/v1/subscriptions      - List all subscriptions
+GET    /api/v1/subscriptions/:id  - Get subscription by ID
+PUT    /api/v1/subscriptions/:id  - Update subscription
+DELETE /api/v1/subscriptions/:id  - Delete subscription
+```
 #### Analytics
-GET    /api/v1/analytics/dashboard              - Get analytics<br>
-GET    /api/v1/analytics/notifications          - Get notifications<br>
-PUT    /api/v1/analytics/notifications/:id/read - Mark as read<br>
-
+```
+GET    /api/v1/analytics/dashboard              - Get analytics
+GET    /api/v1/analytics/notifications          - Get notifications
+PUT    /api/v1/analytics/notifications/:id/read - Mark as read
+```
 ---
 
 ## 🧪 Testing
