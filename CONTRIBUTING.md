@@ -152,7 +152,6 @@ refactor: Code refactoring<br>
 test: Adding/updating tests<br>
 chore: Maintenance tasks<br>
 
-Examples
 # Feature
 git commit -m "feat(subscriptions): add recurring billing support"<br>
 
@@ -170,7 +169,7 @@ BREAKING CHANGE: /api/subscriptions now requires authentication"
 ---
 
 ## 🔄 Pull Request Process
-Before Submitting
+# Before Submitting
 
 ✅ Code follows style guidelines<br>
 ✅ Tests pass (npm test)<br>
@@ -179,7 +178,7 @@ Before Submitting
 ✅ Commits follow convention<br>
 ✅ No merge conflicts<br>
 
-PR Template-
+# PR Template
 When creating a PR, include:
 
 Description: What does this PR do?<br>
@@ -188,7 +187,7 @@ Type of Change: Feature, bugfix, docs, etc.<br>
 Testing: How was this tested?<br>
 Screenshots: If UI changes<br>
 
-Review Process
+# Review Process
 
 At least one maintainer must review<br>
 All CI checks must pass<br>
@@ -220,6 +219,7 @@ describe('POST /api/v1/subscriptions', () => {
   });
 });
 ```
+
 ### Test Coverage
 
 Maintain >80% code coverage<br>
@@ -228,6 +228,7 @@ Mock external dependencies<br>
 Use descriptive test names<br>
 
 ### Running Tests
+
 # All tests
 npm test
 
@@ -288,7 +289,6 @@ git commit -m "feat: add amazing feature"
 # 4. Push to your fork
 git push origin feature/my-feature
 
-# 5. Create pull request on GitHub
 
 ---
 
